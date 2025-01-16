@@ -1,0 +1,39 @@
+%sql
+-- A Common Table Expression (CTE) in SQL is a temporary, named result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement.
+-- CTEs are particularly useful for simplifying complex queries, making them easier to read and maintain.
+
+WITH cte_name (optional_column_list) AS (
+    -- CTE query definition
+    SELECT ...
+    FROM ...
+    WHERE ...
+)
+-- Main query
+SELECT ...
+FROM cte_name;
+
+WITH HighEarningEmployees AS (
+    SELECT EmployeeID, FirstName, LastName, Salary
+    FROM Employees
+    WHERE Salary > 50000
+)
+SELECT *
+FROM HighEarningEmployees;
+
+"""
+In this example:
+
+The WITH clause defines the CTE named HighEarningEmployees.
+The CTE query selects employees with a salary greater than $50,000.
+The main query then selects all columns from the HighEarningEmployees CTE.
+CTEs can be very powerful for breaking down complex queries into more manageable parts. They can also be used recursively to solve problems that involve hierarchical data12.
+"""
+AI-generated content may be incorrect
+Can you explain recursive CTEs?
+What are the advantages of using CTEs?
+How do I use multiple CTEs in a query?
+
+Response stopped
+Message Copilot...
+
+
