@@ -20,20 +20,19 @@ WITH HighEarningEmployees AS (
 SELECT *
 FROM HighEarningEmployees;
 
-"""
-In this example:
 
-The WITH clause defines the CTE named HighEarningEmployees.
-The CTE query selects employees with a salary greater than $50,000.
-The main query then selects all columns from the HighEarningEmployees CTE.
-CTEs can be very powerful for breaking down complex queries into more manageable parts. They can also be used recursively to solve problems that involve hierarchical data12.
-"""
-AI-generated content may be incorrect
-Can you explain recursive CTEs?
-What are the advantages of using CTEs?
-How do I use multiple CTEs in a query?
+-- In this example:
+-- The WITH clause defines the CTE named HighEarningEmployees.
+-- The CTE query selects employees with a salary greater than $50,000.
+-- The main query then selects all columns from the HighEarningEmployees CTE.
+-- CTEs can be very powerful for breaking down complex queries into more manageable parts. They can also be used recursively to solve problems that involve hierarchical data12.
 
-Response stopped
-Message Copilot...
+-- CTEs do have some advantages over subqueries:
+-- The first advantage: is that CTEs are reusable. This means that you can reference the CTE multiple times in the same query. you can use a CTE inside of multiple other CTEs and in the main select statement at the end of the query.
+-- SQL remembers that CTE throughout your entire query. 
+-- The second advantage is: that CTEs offer greater readability.  Since CTEs define other tables before the main query, it's generally a lot easier to understand the overall query especially when compared to subqueries,
+-- which are tangled and integrated into the main query.
+-- The third main advantage: is that CTEs can be recursive which means that they can reference themselves.
+
 
 
